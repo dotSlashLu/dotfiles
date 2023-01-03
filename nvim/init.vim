@@ -2,10 +2,10 @@
     call plug#begin('~/.config/nvim/plugged')
     " Plug 'fatih/vim-go'
     Plug 'kien/ctrlp.vim'
-    # Plug 'chr4/nginx.vim'
+    " Plug 'chr4/nginx.vim'
     Plug 'junegunn/fzf'
     Plug 'preservim/nerdtree'
-    # Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     
     "" On-demand loading
     " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
