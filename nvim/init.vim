@@ -177,7 +177,16 @@
     set maxmempattern=3000
     set encoding=utf8
     set ffs=unix,mac,dos " default standard to unix file type
-    
+    " 鼠标选择与剪贴板
+    if !empty($SSH_CLIENT) || !empty($SSH_TTY)
+        " 如果是 SSH 远程连接，禁用鼠标，方便用终端原生鼠标划选复制
+        set mouse=
+    else
+        " 如果是本地环境（比如你本地的 macOS），开启鼠标支持
+        set mouse=a
+        set clipboard=unnamedplus
+    endif
+
     syntax on
     set ruler " always show current position
     set hlsearch " highlight search results
